@@ -1,0 +1,93 @@
+.task-modal-hide {
+
+    width: 100%;
+    height: 100vh;
+}
+
+
+.task-modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    min-width: 500px;
+    width: 50%;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid #353535;
+    padding: 40px 20px ;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.modal-field  {
+    background: rgba( 109, 109, 109, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 100%;
+    padding: 10px;
+}
+
+.task-modal-buttom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: End;
+    gap: 2rem;
+}
+.btn-primary  {
+    min-width: 100px;
+    background: rgba( 13, 150, 0, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 100%;
+    height: 45px;
+
+}
+
+.modal-priority-dropdown select {
+    min-width: 100px;
+    background: rgba( 109, 109, 109, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 100%;
+    height: 45px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 2em;
+    background-image: url('../../assets/down-arrow.svg'); /* Replace with your arrow image */
+    background-repeat: no-repeat;
+    background-position: right 0.5em center; /* Adjust right value for spacing */
+    background-size: 1em; /* Adjust size as needed */
+    padding: 10px;
+}
+.modal-date-picker input {
+    min-width: 100px;
+    background: rgba( 109, 109, 109, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 100%;
+    height: 43px;
+    padding: 0px 5px;
+    font-size: 11px;
+}
+
+
+#task-description-field {
+   width: 96%;
+}

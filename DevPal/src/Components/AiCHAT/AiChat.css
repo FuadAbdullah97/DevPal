@@ -1,0 +1,113 @@
+.ai-chat-container {
+    display: flex;
+    flex-direction : column;
+    justify-content: start;
+    align-items: center;
+    min-height: 60vh;
+
+}
+.ai-chat-container {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid #353535;
+    padding: 40px 20px ;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.ai-chat-title{
+    margin : 0px;
+    padding: 00px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ai-chat-title img {
+    width: 20px;
+    padding: 10px;
+}
+
+
+.ai-main-suggestions img {
+    width: 20px;
+}
+.ai-main-suggestions   {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ai-main-suggestion {
+    display: block;
+    padding: 10px 40px;
+    background: rgba( 109, 109, 109, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+}
+.ai-main-suggestion p {
+    margin: 0px;
+}
+
+.ai-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba( 109, 109, 109, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    width: 95%;
+
+}
+.ai-bottom img {
+    width: 20px;
+}
+.ai-bottom input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+
+}
+
+.ai-greetings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ai-middle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba( 0, 0, 0, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 90%;
+    min-height: 50vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+.ai-chat-top  {
+   margin-bottom: 20px;
+}

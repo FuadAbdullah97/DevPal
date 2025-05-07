@@ -1,0 +1,165 @@
+.task-cards {
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid #353535;
+    padding: 40px 20px ;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.task-cards {
+    width: 100%;
+}
+#add-new-task  button {
+background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.task-icons {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.task-container {
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    min-height: 30px;
+}
+
+
+.tasks  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.task-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.task-container {
+    background: rgba( 44, 44, 44, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #353535;
+}
+
+.add-new-task input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.add-new-task input::placeholder {
+    color: #f4f4f6;
+    font-weight: 300;
+}
+
+
+.add-new-task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-bar {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
+.filter-dropdown select {
+    background: rgba( 130, 130, 130, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #353535;
+    margin: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 2em;
+    background-image: url('../../assets/down-arrow.svg'); /* Replace with your arrow image */
+    background-repeat: no-repeat;
+    background-position: right 0.5em center; /* Adjust right value for spacing */
+    background-size: 1em; /* Adjust size as needed */
+
+}
+.completed-task {
+    text-decoration: line-through;
+}
+
+.task-crud {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.task-meta {
+    padding: 3px 8px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.high {
+    background: rgba( 255, 89, 89, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.medium {
+    background: rgba( 253, 253, 117, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.low {
+    background: rgba( 128, 255, 115, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

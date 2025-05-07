@@ -1,0 +1,82 @@
+.welcome-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    width: 55%;
+}
+.welcome-bar {
+    background: #141E30;  /* fallback for old browsers */
+  background-image: url("../../assets/Welcome bar BG.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    /*background: -webkit-linear-gradient(to right, #243B55, #141E30);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to right, #243B55, #141E30); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    border: 1px solid #353535;
+    padding: 20px 40px ;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/*.total-tasks {background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%)}*/
+/*.total-tasks {*/
+/*    margin: 10px;*/
+/*    padding: 20px 45px;*/
+/*    text-align: center;*/
+/*    text-transform: uppercase;*/
+/*    transition: 0.5s;*/
+/*    background-size: 200% auto;*/
+/*    color: white;*/
+/*    box-shadow: 0 0 2px #223b52;*/
+/*    border-radius: 10px;*/
+/*    display: block;*/
+/*}*/
+
+.task-card {
+    background: rgba( 51, 51, 51, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    text-align: center;
+    min-width: 100px;
+}
+.total-count {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.total-title {
+    font-size: 12px;
+    margin : 0px
+
+}
+
+
+.task-analysis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.greetings h2 {
+    font-size: 20px ;
+}
+.greetings p {
+    font-size: 15px ;
+}
