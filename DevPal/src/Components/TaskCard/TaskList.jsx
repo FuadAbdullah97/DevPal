@@ -15,8 +15,8 @@ function TaskList(props) {
     const [tasks, setTasks] = useState([]); // Initialize as an empty array
 
     useEffect(() => {
-        const storedTasks = localStorage.getItem("myTasks");
-        console.log("Tasks loaded from localStorage:", storedTasks);
+        const storedTasks = sessionStorage.getItem("myTasks");
+        console.log("Tasks loaded from sessionStorage:", storedTasks);
         if(storedTasks){
             try {
                 const parsedTasks = JSON.parse(storedTasks);
@@ -31,7 +31,7 @@ function TaskList(props) {
     }, []); // Empty dependency array means this runs only once after the initial render
 
     useEffect( () => {
-    localStorage.setItem("myTasks", JSON.stringify(tasks));
+    sessionStorage.setItem("myTasks", JSON.stringify(tasks));
     }, [tasks]);
 
 
@@ -52,6 +52,10 @@ function TaskList(props) {
         }
     };
 
+    const closePopup = () => {
+       return  setOpenPopup(false);
+    }
+
     return (
         <>
             <div className="task-list task-cards">
@@ -67,7 +71,7 @@ function TaskList(props) {
                     <div className="task-title">
                         <img src={taskCircle} alt="" className="task-icons"/>
                         <span>{task.text}</span>
-                        <p>{task.description}</p>
+                        {/*<p>{task.description}</p>*/}
                     </div>
                     <div className="task-crud">
                         <span className="task-meta high">{task.priority}</span>
@@ -80,7 +84,7 @@ function TaskList(props) {
             {openPopup && (
                 <TaskModal
                 open  = {openPopup}
-                onclose = {() => setOpenPopup(false)}
+                onclose = {closePopup}
                 onAddTask = {add}
                 titleRef = {titleRef}
                 descriptionRef = {descriptionRef}
